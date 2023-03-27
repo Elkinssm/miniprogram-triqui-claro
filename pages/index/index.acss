@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.empty {
+  background-color: lightgray;
+}
+
+.cell.X {
+  color: blue;
+}
+
+.cell.O {
+  color: red;
+}

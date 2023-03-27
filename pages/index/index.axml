@@ -1,0 +1,11 @@
+<view class="title">
+    Triqui
+</view>
+<view class="container">
+  <view a:for="{{board}}" a:for-item="row" a:for-index="rowIndex" class="row">
+    <view a:for="{{row}}" a:for-item="cell" a:for-index="colIndex" id="{{'cell-' + rowIndex + '-' + colIndex}}" class="cell" 
+    data-row="{{rowIndex}}" data-col="{{colIndex}}" onTap="handleCellClick">
+      {{cell}}
+    </view>
+  </view>
+</view>
