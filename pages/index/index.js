@@ -16,7 +16,7 @@
       var board = this.data.board;
       var currentPlayer = this.data.currentPlayer;
     
-      if (board[row][col] == '') {
+     {
         board[row][col] = currentPlayer;
         this.setData({
           board: board,
